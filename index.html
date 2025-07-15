@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Danchy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800 bg-white">
+  <header style="background-color: #c6a9ac;" class="shadow-lg fixed top-0 left-0 w-full z-50 transition-shadow">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-4 max-w-7xl">
+      <a href="#inicio" class="flex items-center gap-2">
+        <img src="img/logo.png" alt="Logo" class="h-12 md:h-14 lg:h-16 transition-all duration-300">
+      </a>
+      <button id="menu-toggle" class="text-white md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex gap-6 text-white text-lg md:text-xl font-medium tracking-wide">
+        <li><a href="#inicio" class="hover:text-[#fd0a60] transition-colors duration-200">Inicio</a></li>
+        <li><a href="#presentacion-duena" class="hover:text-[#fd0a60] transition-colors duration-200">Sobre Mí</a></li>
+        <li><a href="#certificacion-occape" class="hover:text-[#fd0a60] transition-colors duration-200">Occape</a></li>
+        <li><a href="pages/cursos.html" class="hover:text-[#fd0a60] transition-colors duration-200">Cursos</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-[#c88a97]/90 backdrop-blur-md text-white px-6 pb-4">
+      <ul class="flex flex-col gap-4 text-lg font-medium">
+        <li><a href="#inicio" class="hover:text-[#fd0a60]">Inicio</a></li>
+        <li><a href="#presentacion-duena" class="hover:text-[#fd0a60]">Sobre Mí</a></li>
+        <li><a href="#certificacion-occape" class="hover:text-[#fd0a60] transition-colors duration-200">Occape</a></li>
+        <li><a href="pages/cursos.html" class="hover:text-[#fd0a60]">Cursos</a></li>
+      </ul>
+    </div>
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      toggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("shadow-xl", window.scrollY > 10);
+      });
+    </script>
+  </header>
+
+  <<section id="inicio" class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-[#f9d5d3] to-[#fce4e8] px-6 md:px-20 pt-28 pb-12 text-[#5a2d36] text-center gap-10">
+
+  <!-- Texto -->
+  <div class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-['Playfair_Display',_serif] font-bold mb-6 leading-tight">
+      Academia Danchy<br><span class="text-[#d48299]">Aprendé. Emprendé. Brillá.</span>
+    </h1>
+    <p class="text-base md:text-lg mb-6 max-w-md text-[#6b3c4a] mx-auto md:mx-0">
+      Somos una academia joven que nace del amor por la estética. Nuestro compromiso es formarte con pasión, técnica y acompañamiento para que puedas emprender con confianza.
+    </p>
+    <a href="pages/cursos.html"
+      class="bg-[#d48299] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#b34060] transition duration-300 inline-block mx-auto md:mx-0">
+      Ver Cursos
+    </a>
+    <p class="mt-4 text-sm italic text-[#9c4e61]">¡Inscripciones abiertas todo el año!</p>
+
+    <!-- Métricas -->
+    <div class="flex flex-col md:flex-row gap-6 mt-10 text-center text-sm font-medium text-[#7a3147] max-w-md mx-auto md:mx-0">
+      <div>
+        <p class="text-2xl font-bold">En crecimiento</p>
+        <p>Un proyecto que evoluciona junto a vos</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">100%</p>
+        <p>Formación con aval profesional</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">Desde 2024</p>
+        <p>Educando con compromiso</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Imagen -->
+  <div class="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center">
+    <img src="img/index.jpg" alt="Modelo estética" class="w-[90%] max-w-md rounded-[2rem] shadow-lg transition-transform duration-500 hover:scale-105" />
+  </div>
+
+</section>
+
+
+
+  <section id="presentacion-duena" class="bg-white py-16 px-6 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 max-w-4xl">
+      <div class="md:w-1/3 flex justify-center" data-aos="fade-right" data-aos-duration="1000">
+        <img src="img/dueña.jpg" alt="Dueña de la Academia Danchy"
+          class="rounded-full w-80 h-80 object-cover shadow-lg border-4 border-[#f9d5d3]">
+      </div>
+      <div class="md:w-2/3 text-center md:text-left" data-aos="fade-left" data-aos-duration="1000">
+        <h2 class="text-4xl font-bold mb-4 text-[#d48299] font-['Playfair_Display',_serif]">Sobre mí</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          ¡Hola! Soy Danchy Micaela Steinbrener, cosmetóloga, cosmiatra y dermocosmiatra, matriculada y avalada en más
+          de 10 países. Me capacité en varias instituciones de gestión privada, así como en otras ramas complementarias
+          de la estética.
+          <br>
+          Mi meta es capacitarte como profesional, ayudarte a reinventarte en el ámbito laboral y acompañarte para que
+          avances con éxito, sin miedo al fracaso.
+        </p>
+        <p class="mt-4 text-md text-gray-600">
+          "La educación es el arma más poderosa que puedes usar para cambiar el mundo." - Nelson Mandela
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="presentacion-academia"
+    class="min-h-screen w-full bg-gradient-to-t from-[#d48299] to-[#f9d5d3] px-6 py-20 flex justify-center items-center">
+    <div class="max-w-6xl w-full bg-white shadow-2xl rounded-2xl p-8 md:p-12 text-center text-gray-800"
+      data-aos="fade-up" data-aos-duration="1200">
+
+      <h2
+        class="text-4xl md:text-5xl font-extrabold mb-6 text-[#d48299] font-['Playfair_Display',_serif] drop-shadow-md">
+        Conocé Academia Danchy
+      </h2>
+      <p class="mb-8 text-lg md:text-xl leading-relaxed font-medium text-gray-700">
+        En Academia Danchy te brindamos una formación profesional, moderna y humana en estética facial, corporal y
+        belleza integral. Nuestro enfoque está pensado para que desarrolles tu talento con confianza, práctica real y
+        acompañamiento personalizado.
+      </p>
+
+      <h3 class="text-2xl md:text-3xl font-bold text-[#e64e81] mb-8 font-['Playfair_Display',_serif]">
+        Nuestras Especialidades Destacadas
+      </h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 max-w-5xl mx-auto">
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Cosmiatría Profesional</h4>
+          <p class="text-gray-600 text-center text-sm">Tratamientos estéticos para afecciones cutáneas con respaldo
+            dermocosmético.</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Depilación Láser</h4>
+          <p class="text-gray-600 text-center text-sm">Formación técnica en depilación definitiva con equipos de última
+            generación.</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Estética Corporal</h4>
+          <p class="text-gray-600 text-center text-sm">Modelado corporal, aparatología, masajes y tratamientos
+            reductores.</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Lashista Profesional</h4>
+          <p class="text-gray-600 text-center text-sm">Especialización completa en pestañas: extensiones, lifting y
+            diseño de mirada.</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">BB Glow & Dermapen</h4>
+          <p class="text-gray-600 text-center text-sm">Técnicas de microneedling para mejorar textura, tono y
+            luminosidad facial.</p>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Diseño de Cejas con Henna</h4>
+          <p class="text-gray-600 text-center text-sm">Perfeccioná el diseño y color de cejas con técnicas modernas y
+            naturales.</p>
+        </div>
+
+      </div>
+
+      <p class="italic text-[#7a3147] font-medium mb-8 text-lg">
+        Estudiá con nosotros y convertite en una profesional destacada en estética. Nuestro compromiso es ayudarte a
+        crecer con calidad y pasión.
+      </p>
+
+      <a href="pages/cursos.html"
+        class="inline-block bg-gradient-to-r from-[#e64e81] to-[#b34060] text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:scale-105 transform transition-all duration-300">
+        Explora todos nuestros cursos, masterclasses y carreras
+      </a>
+    </div>
+  </section>
+
+
+  <section id="certificacion-occape" class="w-full bg-gradient-to-b from-[#d48299] to-[#f9d5d3] px-6 py-20">
+    <div
+      class="flex flex-col w-full bg-white max-w-[1100px] mx-auto shadow-2xl rounded-2xl overflow-hidden animate__animated animate__fadeInUp items-center relative"
+      data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+
+      <img src="img/certif-occape.png" href="https://www.occape.com.ar/" alt="Certificación OCCAPE"
+        class="absolute top-4 right-4 w-24 md:w-28 lg:w-32 opacity-90 drop-shadow-xl pointer-events-none select-none z-10" />
+
+      <div class="w-full text-gray-700 p-8 md:p-12 flex flex-col justify-center text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-[#e64e81] font-['Playfair_Display',_serif]">
+          Certificación Profesional OCCAPE
+        </h2>
+        <p class="mb-4 text-lg leading-relaxed">
+          Nuestra academia cuenta con la certificación oficial de <strong>OCCAPE</strong>, la
+          <em>Organización de Certificación y Categorización Argentina de Peluquería y Estética</em>. Esta
+          entidad es reconocida por su labor en garantizar <br> la calidad educativa y profesional en el ámbito estético
+          a
+          nivel nacional e internacional.
+        </p>
+        <p class="mb-6 text-lg leading-relaxed">
+          Esta acreditación representa nuestro compromiso con la excelencia formativa, respaldando nuestros programas
+          con altos estándares pedagógicos y técnicos. Al elegir formarte con nosotros, tenés la tranquilidad de
+          recibir una educación confiable, avalada y reconocida en el mercado profesional.
+        </p>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#b34060] mt-4 mb-4 font-['Playfair_Display',_serif]">
+          ¿Qué implica para vos como estudiante?
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start text-base justify-start text-left">
+            <svg class="flex-shrink-0 w-6 h-6 text-[#e64e81] mr-3 mt-1" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+              <strong class="text-gray-800">Formación de Calidad:</strong> Programas diseñados bajo criterios exigentes
+              y actualizados para tu desarrollo profesional.
+            </div>
+          </li>
+          <li class="flex items-start text-base justify-start text-left">
+            <svg class="flex-shrink-0 w-6 h-6 text-[#e64e81] mr-3 mt-1" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+              </path>
+            </svg>
+            <div>
+              <strong class="text-gray-800">Certificación Oficial:</strong> Tus diplomas estarán respaldados por OCCAPE,
+              garantizando su reconocimiento.
+            </div>
+          </li>
+          <li class="flex items-start text-base justify-start text-left">
+            <svg class="flex-shrink-0 w-6 h-6 text-[#e64e81] mr-3 mt-1" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+            <div>
+              <strong class="text-gray-800">Mayor Proyección Laboral:</strong> Amplía tus oportunidades en el mercado
+              profesional, tanto en Argentina como a nivel internacional.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer style="background-color:#e64e81;" class="text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 font-['Playfair_Display',_serif]">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white text-center md:text-left gap-8">
+        <div class="flex flex-col items-center md:items-center px-4">
+          <h4 class="text-2xl font-semibold mb-2">Academia Danchy</h4>
+          <p class="text-sm">&copy; 2025 Todos los derechos reservados.</p>
+          <p class="text-sm italic">Educando con amor y pasión.</p>
+        </div>
+        <div class="flex flex-col items-center md:items-center px-4">
+          <h4 class="text-2xl font-semibold mb-2">Contacto</h4>
+          <p class="text-sm">Email: academiadanchy2025@gmail.com</p>
+          <p class="text-sm">Tel: +54 9 3755 62-8390</p>
+        </div>
+        <div class="flex flex-col items-center md:items-center px-4">
+          <h4 class="text-2xl font-semibold mb-2">Síguenos</h4>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/academia_danchy?utm_source=ig_web_button_share_sheet&igsh=N3kyNng5OGlqZ2Fw"
+              class="underline text-sm hover:text-gray-100">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
