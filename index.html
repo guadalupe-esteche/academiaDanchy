@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -23,7 +24,7 @@
   </style>
 </head>
 
-<body class="text-gray-800 bg-white">
+<body class="text-gray-800 bg-white overflow-x-hidden">
   <header style="background-color: #c6a9ac;" class="shadow-lg fixed top-0 left-0 w-full z-50 transition-shadow">
     <nav class="container mx-auto flex justify-between items-center px-6 py-4 max-w-7xl">
       <a href="#inicio" class="flex items-center gap-2">
@@ -64,46 +65,49 @@
     </script>
   </header>
 
-  <<section id="inicio" class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-[#f9d5d3] to-[#fce4e8] px-6 md:px-20 pt-28 pb-12 text-[#5a2d36] text-center gap-10">
+  <section id="inicio"
+    class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-[#f9d5d3] to-[#fce4e8] px-6 md:px-20 pt-28 pb-12 text-[#5a2d36] text-center gap-10">
 
-  <!-- Texto -->
-  <div class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-    <h1 class="text-4xl md:text-5xl font-['Playfair_Display',_serif] font-bold mb-6 leading-tight">
-      Academia Danchy<br><span class="text-[#d48299]">Aprendé. Emprendé. Brillá.</span>
-    </h1>
-    <p class="text-base md:text-lg mb-6 max-w-md text-[#6b3c4a] mx-auto md:mx-0">
-      Somos una academia joven que nace del amor por la estética. Nuestro compromiso es formarte con pasión, técnica y acompañamiento para que puedas emprender con confianza.
-    </p>
-    <a href="pages/cursos.html"
-      class="bg-[#d48299] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#b34060] transition duration-300 inline-block mx-auto md:mx-0">
-      Ver Cursos
-    </a>
-    <p class="mt-4 text-sm italic text-[#9c4e61]">¡Inscripciones abiertas todo el año!</p>
+    <!-- Texto -->
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-['Playfair_Display',_serif] font-bold mb-6 leading-tight">
+        Academia Danchy<br><span class="text-[#d48299]">Aprendé. Emprendé. Brillá.</span>
+      </h1>
+      <p class="text-base md:text-lg mb-6 max-w-md text-[#6b3c4a] mx-auto md:mx-0">
+        Somos una academia joven que nace del amor por la estética. Nuestro compromiso es formarte con pasión, técnica y
+        acompañamiento para que puedas emprender con confianza.
+      </p>
+      <a href="pages/cursos.html"
+        class="bg-[#d48299] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#b34060] transition duration-300 inline-block mx-auto md:mx-0">
+        Ver Cursos
+      </a>
+      <p class="mt-4 text-sm italic text-[#9c4e61]">¡Inscripciones abiertas todo el año!</p>
 
-    <!-- Métricas -->
-    <div class="flex flex-col md:flex-row gap-6 mt-10 text-center text-sm font-medium text-[#7a3147] max-w-md mx-auto md:mx-0">
-      <div>
-        <p class="text-2xl font-bold">En crecimiento</p>
-        <p>Un proyecto que evoluciona junto a vos</p>
-      </div>
-      <div>
-        <p class="text-2xl font-bold">100%</p>
-        <p>Formación con aval profesional</p>
-      </div>
-      <div>
-        <p class="text-2xl font-bold">Desde 2024</p>
-        <p>Educando con compromiso</p>
+      <!-- Métricas -->
+      <div
+        class="flex flex-col md:flex-row gap-6 mt-10 text-center text-sm font-medium text-[#7a3147] max-w-md mx-auto md:mx-0">
+        <div>
+          <p class="text-2xl font-bold">En crecimiento</p>
+          <p>Un proyecto que evoluciona junto a vos</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold">100%</p>
+          <p>Formación con aval profesional</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold">Desde 2024</p>
+          <p>Educando con compromiso</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Imagen -->
-  <div class="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center">
-    <img src="img/index.jpg" alt="Modelo estética" class="w-[90%] max-w-md rounded-[2rem] shadow-lg transition-transform duration-500 hover:scale-105" />
-  </div>
+    <!-- Imagen -->
+    <div class="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center">
+      <img src="img/index.jpg" alt="Modelo estética"
+        class="w-full max-w-sm rounded-[2rem] shadow-lg transition-transform duration-500 hover:scale-105" />
+    </div>
 
-</section>
-
+  </section>
 
 
   <section id="presentacion-duena" class="bg-white py-16 px-6 min-h-screen flex items-center justify-center">
@@ -147,53 +151,46 @@
       <h3 class="text-2xl md:text-3xl font-bold text-[#e64e81] mb-8 font-['Playfair_Display',_serif]">
         Nuestras Especialidades Destacadas
       </h3>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 max-w-5xl mx-auto">
-
+        <!-- Tarjetas -->
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Cosmiatría Profesional</h4>
           <p class="text-gray-600 text-center text-sm">Tratamientos estéticos para afecciones cutáneas con respaldo
             dermocosmético.</p>
         </div>
-
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Depilación Láser</h4>
           <p class="text-gray-600 text-center text-sm">Formación técnica en depilación definitiva con equipos de última
             generación.</p>
         </div>
-
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Estética Corporal</h4>
           <p class="text-gray-600 text-center text-sm">Modelado corporal, aparatología, masajes y tratamientos
             reductores.</p>
         </div>
-
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Lashista Profesional</h4>
           <p class="text-gray-600 text-center text-sm">Especialización completa en pestañas: extensiones, lifting y
             diseño de mirada.</p>
         </div>
-
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">BB Glow & Dermapen</h4>
           <p class="text-gray-600 text-center text-sm">Técnicas de microneedling para mejorar textura, tono y
             luminosidad facial.</p>
         </div>
-
         <div
-          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300">
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden max-w-full duration-300">
           <h4 class="text-xl font-semibold mb-2 text-[#b34060]">Diseño de Cejas con Henna</h4>
           <p class="text-gray-600 text-center text-sm">Perfeccioná el diseño y color de cejas con técnicas modernas y
             naturales.</p>
         </div>
 
       </div>
-
       <p class="italic text-[#7a3147] font-medium mb-8 text-lg">
         Estudiá con nosotros y convertite en una profesional destacada en estética. Nuestro compromiso es ayudarte a
         crecer con calidad y pasión.
@@ -274,26 +271,59 @@
     </div>
   </section>
 
-  <footer style="background-color:#e64e81;" class="text-white py-10">
-    <div class="max-w-6xl mx-auto px-6 font-['Playfair_Display',_serif]">
+  <footer style="background-color:#e64e81;" class="text-white py-12 font-['Playfair_Display',_serif]">
+    <div class="max-w-6xl mx-auto px-6">
       <div
-        class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white text-center md:text-left gap-8">
-        <div class="flex flex-col items-center md:items-center px-4">
-          <h4 class="text-2xl font-semibold mb-2">Academia Danchy</h4>
-          <p class="text-sm">&copy; 2025 Todos los derechos reservados.</p>
-          <p class="text-sm italic">Educando con amor y pasión.</p>
+        class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 md:gap-24 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-white">
+
+        <!-- Sección principal: Nombre y lema -->
+        <div class="flex flex-col items-center md:items-start px-4">
+          <h2 class="text-3xl font-bold mb-2">Academia Danchy</h2>
+          <p class="italic text-lg max-w-xs">Formando talento con corazón y dedicación.</p>
+          <p class="mt-6 text-sm">&copy; 2025 Academia Danchy. Todos los derechos reservados.</p>
         </div>
-        <div class="flex flex-col items-center md:items-center px-4">
-          <h4 class="text-2xl font-semibold mb-2">Contacto</h4>
-          <p class="text-sm">Email: academiadanchy2025@gmail.com</p>
-          <p class="text-sm">Tel: +54 9 3755 62-8390</p>
-        </div>
-        <div class="flex flex-col items-center md:items-center px-4">
-          <h4 class="text-2xl font-semibold mb-2">Síguenos</h4>
-          <div class="flex gap-4">
-            <a href="https://www.instagram.com/academia_danchy?utm_source=ig_web_button_share_sheet&igsh=N3kyNng5OGlqZ2Fw"
-              class="underline text-sm hover:text-gray-100">Instagram</a>
+
+        <!-- Sección de enlaces y contacto -->
+        <div class="flex flex-col md:flex-row justify-between px-4 gap-10 md:gap-20">
+
+          <!-- Navegación -->
+          <nav class="text-sm flex flex-col items-center md:items-start">
+            <h3 class="text-2xl font-semibold mb-4">Navega</h3>
+            <ul class="space-y-3">
+              <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+              <li><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
+              <li><a href="#certificaciones" class="hover:underline">Sobre la Academia</a></li>
+              <li><a href="pages/cursos.html" class="hover:underline">Nuestras capacitaciones</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contacto -->
+          <div class="text-sm flex flex-col items-center md:items-start">
+            <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
+            <p class="mb-2">
+              <a href="mailto:academiadanchy2025@gmail.com"
+                class="underline hover:text-gray-100">academiadanchy2025@gmail.com</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <a href="https://wa.me/5493755628390" target="_blank" aria-label="WhatsApp"
+                class="hover:text-gray-100 transition text-2xl">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="tel:+543755628390" class="hover:underline">+54 9 3755 62-8390</a>
+            </p>
           </div>
+
+          <!-- Redes sociales -->
+          <div class="flex flex-col items-center md:items-start text-2xl">
+            <h3 class="text-2xl font-semibold mb-4">Síguenos</h3>
+            <div class="flex gap-8">
+              <a href="https://www.instagram.com/academy_danchy" target="_blank" aria-label="Instagram"
+                class="hover:text-gray-100 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
