@@ -26,7 +26,7 @@
 
 <body class="text-gray-800 bg-white overflow-x-hidden">
   <header style="background-color: #c6a9ac;" class="shadow-lg fixed top-0 left-0 w-full z-50 transition-shadow">
-    <nav class="container mx-auto flex justify-between items-center px-6 py-4 max-w-7xl">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-6 max-w-7xl">
       <a href="#inicio" class="flex items-center gap-2">
         <img src="img/logo.png" alt="Logo" class="h-12 md:h-14 lg:h-16 transition-all duration-300">
       </a>
@@ -65,66 +65,69 @@
     </script>
   </header>
 
-  <section id="inicio" class="min-h-screen flex flex-col md:flex-row pt-24">
-
-    <!-- Lado izquierdo: Texto -->
-    <div class="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-20 bg-[#fce4e8] text-[#5a2d36]">
-      <h1 data-aos="fade-right" data-aos-delay="0"
+  <section id="inicio" class="pt-24 min-h-screen flex flex-col md:flex-row">
+  <!-- Texto -->
+  <div class="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-20 py-10 bg-[#fce4e8] text-[#5a2d36]">
+    <h1 data-aos="fade-right" data-aos-delay="0"
         class="text-4xl md:text-5xl font-['Playfair_Display',_serif] font-bold mb-6 leading-tight text-center md:text-left">
-        Academia Danchy<br><span class="text-[#d48299]">Aprendé. Emprendé. Brillá.</span>
-      </h1>
+      Academia Danchy<br><span class="text-[#d48299]">Aprendé. Emprendé. Brillá.</span>
+    </h1>
 
-      <p data-aos="fade-right" data-aos-delay="200"
-        class="text-base md:text-lg mb-6 max-w-md text-[#6b3c4a] text-center md:text-left mx-auto md:mx-0">
-        Somos una academia joven que nace del amor por la estética. Nuestro compromiso es formarte con pasión, técnica y
-        acompañamiento para que puedas emprender con confianza.
-      </p>
+    <p data-aos="fade-right" data-aos-delay="200"
+       class="text-base md:text-lg mb-6 max-w-md text-[#6b3c4a] text-center md:text-left mx-auto md:mx-0">
+      Somos una academia joven que nace del amor por la estética. Nuestro compromiso es formarte con pasión, técnica y
+      acompañamiento para que puedas emprender con confianza.
+    </p>
 
-      <div data-aos="fade-right" data-aos-delay="400" class="text-center md:text-left">
-        <a href="pages/cursos.html"
-          class="bg-[#d48299] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#b34060] transition duration-300 inline-block">
-          Ver Cursos
-        </a>
-      </div>
-
-      <p data-aos="fade-right" data-aos-delay="500" class="mt-4 text-sm italic text-[#9c4e61] text-center md:text-left">
-        ¡Inscripciones abiertas todo el año!
-      </p>
-
-      <!-- Métricas -->
-      <div data-aos="fade-right" data-aos-delay="600"
-        class="flex flex-col md:flex-row justify-between items-start gap-6 mt-10 text-center text-sm font-medium text-[#7a3147] max-w-4xl mx-auto">
-        <div class="flex-1">
-          <p class="text-lg font-bold mb-1">En crecimiento</p>
-          <p class="text-xs">Un proyecto que evoluciona junto a vos</p>
-        </div>
-        <div class="flex-1">
-          <p class="text-lg font-bold mb-1">100%</p>
-          <p class="text-xs">Formación con aval profesional</p>
-        </div>
-        <div class="flex-1">
-          <p class="text-lg font-bold mb-1">Desde 2023</p>
-          <p class="text-xs">Educando con compromiso</p>
-        </div>
-      </div>
+    <div data-aos="fade-right" data-aos-delay="400" class="text-center md:text-left">
+      <a href="pages/cursos.html"
+         class="bg-[#d48299] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#b34060] transition duration-300 inline-block">
+        Ver Cursos
+      </a>
     </div>
 
-    <!-- Lado derecho: Imagen -->
-    <div class="w-full md:w-1/2 h-[50vh] md:h-auto relative">
-      <div class="w-full h-full bg-cover bg-center" style="background-image: url('img/index.jpg');"></div>
+    <p data-aos="fade-right" data-aos-delay="500"
+       class="mt-4 text-sm italic text-[#9c4e61] text-center md:text-left">
+      ¡Inscripciones abiertas todo el año!
+    </p>
 
-      <!-- Degradado lateral en desktop (izquierda) -->
-      <div
-        class="hidden md:block absolute left-0 top-0 w-1/3 h-full bg-gradient-to-r from-[#fce4e8] to-transparent pointer-events-none">
+    <!-- Métricas -->
+    <div data-aos="fade-right" data-aos-delay="600"
+         class="flex flex-col md:flex-row justify-between items-center gap-6 mt-10 text-center text-sm font-medium text-[#7a3147] max-w-4xl mx-auto">
+      <div class="flex-1">
+        <p class="text-lg font-bold mb-1">En crecimiento</p>
+        <p class="text-xs">Un proyecto que evoluciona junto a vos</p>
       </div>
-
-      <!-- Degradado superior en mobile -->
-      <div
-        class="block md:hidden absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#fce4e8] to-transparent pointer-events-none">
+      <div class="flex-1">
+        <p class="text-lg font-bold mb-1">100%</p>
+        <p class="text-xs">Formación con aval profesional</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-lg font-bold mb-1">Desde 2024</p>
+        <p class="text-xs">Educando con compromiso</p>
       </div>
     </div>
+  </div>
 
-  </section>
+  <!-- Imagen -->
+  <div class="w-full md:w-1/2 relative">
+    <!-- Imagen -->
+    <div class="min-h-[400px] md:h-full bg-cover bg-center"
+         style="background-image: url('img/index.jpg');">
+    </div>
+
+    <!-- Degradado lateral -->
+    <div
+      class="hidden md:block absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-[#fce4e8] to-transparent pointer-events-none">
+    </div>
+
+    <!-- Degradado vertical en mobile -->
+    <div
+      class="block md:hidden absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#fce4e8] to-transparent pointer-events-none">
+    </div>
+  </div>
+</section>
+
 
 
   <section id="presentacion-duena" class="bg-white py-16 px-6 min-h-screen flex items-center justify-center">
